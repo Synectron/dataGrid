@@ -40,11 +40,14 @@ const DataTable = () => {
   const finalarry =[]
    data.forEach(element => {
     element.affected_objects.forEach (val =>{
+     
       console.log("push",val);
       value.push(val.name)
+     
     });
     console.log("value",value);
     element.affected_objects=value;
+    value =[]
     finalarry.push(element)
     
   });
